@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import *
-import random
+import secrets
 import pyperclip as pc
 
 # VENTANA #
@@ -18,7 +18,7 @@ num = '1234567890'
 caracteres = '#$%&()*+,-./:;<=>?@[]^_`{|}~'
 vs_letra_up = IntVar()
 vs_letra_down = IntVar()
-vs_numeros = IntVar()
+vs_num = IntVar()
 vs_caracteres = IntVar()
 longitudes = StringVar()
 
@@ -27,25 +27,25 @@ longitudes = StringVar()
 
 
 def validar_check():
-    if vs_letra_up.get() == 1 and vs_letra_down.get() == 1 and vs_caracteres.get() == 1 and vs_numeros.get() == 1:
+    if vs_letra_up.get() == 1 and vs_letra_down.get() == 1 and vs_caracteres.get() == 1 and vs_num.get() == 1:
         todo = letras_up + letras_down + num + caracteres
     elif vs_letra_up.get() == 1 and vs_letra_down.get() == 1 and vs_caracteres.get() == 1:
         todo = letras_up + letras_down + caracteres
-    elif vs_letra_up.get() == 1 and vs_letra_down.get() == 1 and vs_numeros.get() == 1:
+    elif vs_letra_up.get() == 1 and vs_letra_down.get() == 1 and vs_num.get() == 1:
         todo = letras_up + letras_down + num
-    elif vs_letra_up.get() == 1 and vs_caracteres.get() == 1 and vs_numeros.get() == 1:
+    elif vs_letra_up.get() == 1 and vs_caracteres.get() == 1 and vs_num.get() == 1:
         todo = letras_up + num + caracteres
-    elif vs_letra_up.get() == 1 and vs_numeros.get() == 1:
+    elif vs_letra_up.get() == 1 and vs_num.get() == 1:
         todo = letras_up + num
     elif vs_letra_up.get() == 1 and vs_caracteres.get() == 1:
         todo = letras_up + caracteres
-    elif vs_letra_down.get() == 1 and vs_caracteres.get() == 1 and vs_numeros.get() == 1:
+    elif vs_letra_down.get() == 1 and vs_caracteres.get() == 1 and vs_num.get() == 1:
         todo = letras_down + num + caracteres
     elif vs_letra_down.get() == 1 and vs_caracteres.get() == 1:
         todo = letras_down + caracteres
-    elif vs_letra_down.get() == 1 and vs_numeros.get() == 1:
+    elif vs_letra_down.get() == 1 and vs_num.get() == 1:
         todo = letras_down + num
-    elif vs_numeros.get() == 1 and vs_caracteres.get() == 1:
+    elif vs_num.get() == 1 and vs_caracteres.get() == 1:
         todo = num + caracteres
     elif vs_letra_up.get() == 1 and vs_letra_down.get() == 1:
         todo = letras_up + letras_down
@@ -55,9 +55,9 @@ def validar_check():
         todo = letras_down
     elif vs_caracteres.get() == 1:
         todo = caracteres
-    elif vs_numeros.get() == 1:
+    elif vs_num.get() == 1:
         todo = num
-    elif vs_letra_up.get() == 0 and vs_letra_down.get() == 0 and vs_caracteres.get() == 0 and vs_numeros.get() == 0:
+    elif vs_letra_up.get() == 0 and vs_letra_down.get() == 0 and vs_caracteres.get() == 0 and vs_num.get() == 0:
         todo = letras_up + letras_down + num + caracteres
     return todo
 
@@ -67,8 +67,7 @@ def generar_senhas():
     if int(longitudes.get()) < 8:
         longitudes.set('8')
     global senha
-    senha_union = random.sample(todo, int(longitudes.get()))
-    senhas = ''.join(senha_union)
+    senhas = ''.join(secrets.choice(todo) for i in range(int(longitudes.get())))
     senha = senhas
     rotulo_senha.config(text=senhas)
 
@@ -115,8 +114,8 @@ vs_letra_down.set(1)
 opcion_letra_down = tk.Checkbutton(frame_opcion1, text='Letras Minusculas', bg='light sky blue', variable=vs_letra_down)
 opcion_letra_down.pack(padx=5, pady=5, anchor='w')
 
-vs_numeros.set(1)
-opcion_numeros = tk.Checkbutton(frame_opcion1, text='Números', bg='light sky blue', variable=vs_numeros)
+vs_num.set(1)
+opcion_numeros = tk.Checkbutton(frame_opcion1, text='Números', bg='light sky blue', variable=vs_num)
 opcion_numeros.pack(padx=5, pady=5, anchor='w')
 
 vs_caracteres.set(1)
