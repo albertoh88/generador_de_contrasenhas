@@ -38,7 +38,9 @@ pip install pyperclip
 
 Clona el repositorio y ejecuta el script:
 
+```bash
 python generador_contraseñas.py
+```
 
 Se abrirá una ventana gráfica donde podrás:
 
