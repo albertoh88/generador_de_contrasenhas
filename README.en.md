@@ -31,10 +31,27 @@ A password generator developed in **Python with Tkinter**, allowing you to creat
   - tkinter (included by default in Python)  
   - pyperclip  
 
-Install additional dependencies:
+-It is recommended to create a virtual environment to install dependencies without affecting your system:
 
 ```bash
-pip install pyperclip
+python -m venv .venv          #Create the virtual environment
+```
+
+## Activate the virtual environment
+
+Windows
+```bash
+.venv\Scripts\activate
+```
+
+Linux/macOS
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies
+```bash
+pip install -r requirements.txt
 ```
 
 ---
