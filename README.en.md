@@ -37,7 +37,7 @@ A password generator developed in **Python with Tkinter**, allowing you to creat
 python -m venv .venv          #Create the virtual environment
 ```
 
-## Activate the virtual environment
+## 🛠️ Activate the virtual environment
 
 Windows
 ```bash
