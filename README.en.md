@@ -1,3 +1,9 @@
+🌎 Idiomas / Languages:  
+
+[Português](README.pt.md) | [Español](README.md)
+
+---
+
 # 🛡️ Secure Password Generator
 
 A password generator developed in **Python with Tkinter**, allowing you to create secure and customized passwords easily.
