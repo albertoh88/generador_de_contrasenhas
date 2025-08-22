@@ -33,11 +33,30 @@ Antes de ejecutar el programa asegúrate de tener instalado:
   - tkinter (incluido por defecto en Python)  
   - pyperclip 
 
-Instalación de dependencias adicionales:  
+- Se recomienda crear un **entorno virtual** para instalar dependencias sin afectar tu sistema:
 
 ```bash
-pip install pyperclip
+python -m venv .venv          # Crear el entorno virtual
 ```
+
+## Activar el entorno virtual
+
+Windows
+```bash
+.venv\Scripts\activate        
+```
+
+Linux/macOS
+```bash
+source .venv/bin/activate
+```
+
+Instala dependencias
+
+```bash
+pip install -r requirements.txt
+````
+
 ---
 
 ## ▶️ Ejecución
