@@ -37,7 +37,7 @@ Um gerador de senhas desenvolvido em **Python com Tkinter**, que permite criar s
 python -m venv .venv          #Criar o ambiente virtual
 ```
 
-## Ativar o ambiente virtual
+## 🛠️ Ativar o ambiente virtual
 
 Windows
 ```bash
