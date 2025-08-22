@@ -20,7 +20,7 @@ A password generator developed in **Python with Tkinter**, allowing you to creat
 
 ## 🚀 Requirements
 
-- Python 3.8+  
+- [Python 3.8+](https://www.python.org/downloads/)  
 - Required libraries:  
   - tkinter (included by default in Python)  
   - pyperclip  
