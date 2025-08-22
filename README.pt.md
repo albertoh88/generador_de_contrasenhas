@@ -1,3 +1,9 @@
+🌎 Idiomas / Languages:  
+
+[Español](README.md) | [English](README.en.md)
+
+---
+
 # 🛡️ Gerador de Senhas Seguras
 
 Um gerador de senhas desenvolvido em **Python com Tkinter**, que permite criar senhas seguras e personalizadas de forma simples.
