@@ -20,7 +20,7 @@ Um gerador de senhas desenvolvido em **Python com Tkinter**, que permite criar s
 
 ## 🚀 Requisitos
 
-- Python 3.8+  
+- [Python 3.8+](https://www.python.org/downloads/)  
 - Bibliotecas necessárias:  
   - tkinter (incluso por padrão no Python)  
   - pyperclip  
