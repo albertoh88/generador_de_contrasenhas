@@ -39,7 +39,7 @@ Antes de ejecutar el programa asegúrate de tener instalado:
 python -m venv .venv          # Crear el entorno virtual
 ```
 
-## Activar el entorno virtual
+## 🛠️ Activar el entorno virtual
 
 Windows
 ```bash
