@@ -29,13 +29,31 @@ Um gerador de senhas desenvolvido em **Python com Tkinter**, que permite criar s
 - [Python 3.8+](https://www.python.org/downloads/)  
 - Bibliotecas necessárias:  
   - tkinter (incluso por padrão no Python)  
-  - pyperclip  
-
-Instalação de dependências adicionais:
+  - pyperclip
+    
+- Recomenda-se criar um ambiente virtual para instalar as dependências sem afetar o seu sistema:
 
 ```bash
-pip install pyperclip
+python -m venv .venv          #Criar o ambiente virtual
 ```
+
+## Ativar o ambiente virtual
+
+Windows
+```bash
+.venv\Scripts\activate
+```
+
+Linux/macOS
+```bash
+source .venv/bin/activate
+```
+
+Instalar dependências
+```bash
+pip install -r requirements.txt
+```
+
 ---
 
 ## ▶️ Execução
@@ -52,9 +70,11 @@ Você verá uma janela gráfica onde poderá:
 - Gerar e copiar com um clique.
 
 ---
+
 ## 📸 Captura de tela (exemplo)
 
 ![Gerador de senhas](https://github.com/albertoh88/generador_de_contrasenhas/blob/main/generador_de_contrasenhas.png)
+
 ---
 
 ## 💡 Ideias de melhoria
