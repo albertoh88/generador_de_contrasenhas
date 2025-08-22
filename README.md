@@ -1,3 +1,9 @@
+🌎 Idiomas / Languages:  
+
+[Português](README.pt.md) | [English](README.en.md)
+
+---
+
 # 🛡️ Generador de Contraseñas Seguras  
 
 Un generador de contraseñas desarrollado en **Python con Tkinter**, que permite crear claves seguras y personalizadas de manera sencilla.  
